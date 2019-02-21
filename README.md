@@ -1,6 +1,7 @@
 # V2EX based on React-Native
 
-# TODO
+## TODO
+
 - [] API Middleware
 - [] Mobx
 - [] Intergrate wirh ant.design
@@ -8,8 +9,8 @@
 - [] PostItem
 - [] 最热列表
 - [] Paginator
-- [] 可筛选TabName
-- [] 可定制Tab
+- [] 可筛选 TabName
+- [] 可定制 Tab
 - [] PostDetail
 - [] CommentItem
 - [] CommentList
