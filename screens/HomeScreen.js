@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   View
 } from "react-native";
+import { Button } from "@ant-design/react-native";
 
 import API from "../api";
 
@@ -43,6 +44,7 @@ export default class HomeScreen extends React.Component {
             <Text>
               {title} - {slogan}
             </Text>
+            <Button type="primary">Test</Button>
           </View>
         </ScrollView>
       </View>
