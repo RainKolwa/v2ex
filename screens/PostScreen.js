@@ -13,7 +13,7 @@ import PostItem from "../components/PostItem";
 
 import API from "../api";
 
-export default class HomeScreen extends React.Component {
+export default class PostScreen extends React.Component {
   state = {
     siteinfo: {},
     list: []
@@ -30,12 +30,12 @@ export default class HomeScreen extends React.Component {
     // this.setState({
     //   siteinfo: data
     // })
-    const data = await API({
-      url: "topics/hot.json"
-    });
-    this.setState({
-      list: data
-    });
+    // const data = await API({
+    //   url: "topics/hot.json"
+    // })
+    // this.setState({
+    //   list: data
+    // })
   }
 
   render() {
@@ -48,28 +48,7 @@ export default class HomeScreen extends React.Component {
           style={styles.container}
           contentContainerStyle={styles.contentContainer}
         >
-          {this.state.list.map(post => {
-            const {
-              node: { title: nodeName },
-              member: { avatar_mini: avatar },
-              created,
-              title,
-              id
-            } = post;
-            return (
-              <TouchableOpacity
-                key={id}
-                onPress={() => this.props.navigation.navigate("Post")}
-              >
-                <PostItem
-                  title={title}
-                  avatar={avatar}
-                  createdAt={created}
-                  tagName={nodeName}
-                />
-              </TouchableOpacity>
-            );
-          })}
+          <Text>...ssssss</Text>
         </ScrollView>
       </View>
     );
