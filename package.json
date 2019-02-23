@@ -37,5 +37,8 @@
       "git add"
     ]
   },
-  "private": true
+  "private": true,
+  "resolutions": {
+    "react-deep-force-update": "1.1.2"
+  }
 }
